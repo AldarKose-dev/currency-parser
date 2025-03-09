@@ -1,6 +1,6 @@
 # Currency Exchange Rate Parser
-This app diligently fetches currency exchange rates from [mig.kz](https://mig.kz), saves them in PostgreSQL and provides REST API endpoints to retrieve the latest rates and their averages over a specified period, so you don’t have to Google it every time.  
----
+
+This project is a Go-based application that parses currency exchange rates from the [mig.kz](https://mig.kz) website, stores them in a PostgreSQL database, and provides REST API endpoints to retrieve the latest rates and their averages over a specified period.
 
 ## Features
 
@@ -10,15 +10,11 @@ This app diligently fetches currency exchange rates from [mig.kz](https://mig.kz
 - **Cron Job**: Periodically updates the currency data (runs every hour).
 
 ---
-⚠️ Attention!
-No AI was harmed in the making of this project
-## Prerequisites
 
 Before running the project, ensure you have the following installed:
 
 - [Go](https://golang.org/dl/)
 - [PostgreSQL](https://www.postgresql.org/download/)
-- [Git](https://git-scm.com/downloads)
 
 ---
 
@@ -153,3 +149,6 @@ curl "http://localhost:8080/currencies/average?start_date=09-03-2025&end_date=10
     "end_date": "09-03-2025",
     "start_date": "01-01-2025"
 }
+```
+## ⚠️ Attention!
+No AI was harmed in the making of this project 😁
